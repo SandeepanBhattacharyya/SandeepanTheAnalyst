@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<style>
+		/* Styles for the dropdown menu */
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		
+		.dropdown-content a:hover {
+		  background-color: #f1f1f1;
+		}
+		
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		
+		.dropdown:hover .dropbtn {
+		  background-color: #3e8e41;
+		}
+		</style>
+<!-- using the script tag for the javascript element "coming soon"-->
+<p id="comingSoonText"> </p>
+<script>
+	function showComingSoon(event) {
+	  event.preventDefault(); // Prevents default action of link
+	  document.getElementById("comingSoonText").style.display = "block";
+	}
+	</script>
+<head>
+	<title>Sandeepan's Portfolio Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Sandeepan Bhattacharyya<br />
+				Portfolio</h1>
+			<p>Greetings! I'm Sandeepan Bhattacharyya, a driven data enthusiast hailing from the vibrant community of
+				LinkedIn. I specialize in transforming raw data into actionable insights. I love to engineer new
+				features and identifying important and valuables features out the many.<br/>
+				Having honed my skills through hands-on experience and continuous learning, I possess proficiency in a variety of tools and technologies, including Python, R, SQL, and advanced Excel and Power BI. Whether it's developing predictive models, conducting exploratory data analysis, or crafting compelling data visualizations, I thrive on the challenge of transforming information into meaningful narratives.
+				<!--<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li> -->
+				</ul>
+		</div>
+
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Projects</a></li>
+
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/sandeepanbhattacharyya/" class="icon brands fa-linkedin"><span
+							class="label">fa-linkedin</span></a></li>
+				<li><a href="https://github.com/SandeepanBhattacharyya" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://twitter.com/XcelSandeep018" class="icon brands fa-twitter"><span
+							class="label">Twitter(X)</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="https://github.com/SandeepanBhattacharyya/Adventure_Works_Project">Adventure Works Power BI Interactive Dashboard<br />
+							</a></h2>
+					<p>Power BI dashboard report which is uploaded online to Power BI Service as part of my journey as a Business Intelligence Analyst for AdventureWorks Cycles with the PowerBI Desktop course.<br />
+						The Project includes Connecting & Shaping Data, Creating a Relational Data Model, Adding Calculated Fields with DAX and Visualizing Data with Reports.<br />
+					</p>
+				</header>
+				<a href=""
+					class="image main"><img src="ghibli_images/adventure_works.jpeg" alt="" /></a>
+				<ul class="actions special">
+					<li><a href="link for getting into dashboad"
+							class="button large">View Project</a></li>
+				</ul>
+			</article>
+
+			<!-- Posts -->
+			<section class="posts">
+				<article>
+					<header>
+						<h2><a href="#">Stock Market Analysis<br />
+							</a></h2>
+					</header>
+					<a href="" class="image fit"><img src="ghibli_images/stock.jpeg" alt="" /></a>
+					<p>In this portfolio project we will be looking at data from the stock market, particularly some technology stocks. We will use pandas to get stock information, visualize different aspects of it, and finally we will look at a few ways of analyzing the risk of a stock, based on its previous performance history. We will also be predicting future stock prices through a Monte Carlo method.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/-Stock-Market-Analysis-and-Prediction/blob/main/Stock_Market_Analysis.ipynb" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">PowerBI Dashboards<br />
+							</a></h2>
+					</header>
+					<a href=""
+						class="image fit"><img src="ghibli_images/pbi2.png" alt="" /></a>
+					<p>PowerBI Dashboard Projects for Adventure Works Project, Maven Analytics Dashboard Project, and more.</p>
+					<ul class="actions special">
+						<div class="dropdown">
+							<button class="dropbtn">All Dashboards</button>
+							<div class="dropdown-content">
+							  <a href="https://github.com/SandeepanBhattacharyya/Adventure_Works_Project/tree/main">Adventure Works Project</a>
+							  <a href="#" onclick="showComingSoon(event)">Maven Analytics Project (Coming Soon!!)</a>
+							</div>
+						  </div>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">SQL Data Cleaning Portfolio Project<br />
+								</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="ghibli_images/sql.jpeg" alt="" /></a>
+					<p>A comprehensive project involving raw csv data and using MYSQL and various SQL techniques to perform EDA and data cleanup</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/SQL-data-cleanup-Portfolio-Project/tree/main" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Excel Dashboard Project<br />
+								</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="ghibli_images/excel.jpeg" alt="" /></a>
+					<p>A comprehensive financial analysis using Excel to analyze bike sales data to create an interactive dashboard. The dynamic dashboards created allowed for real-time tracking of sales performance.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/Bike-Sales-Dashboard-Portfolio-Project-Excel" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Hand Gesture Recognition using digitally generated images of Rock, Paper and Scissor<br />
+								</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="ghibli_images/hand.jpeg" alt="" /></a>
+					<p>The idea is to use the power of Convolutional Neural Networks(CNN) in my project.This idea originally encountered after watching an anime, where a computer was able to play the basic Rock, Paper, Scissor game with an opponent.</p>
+					<ul class="actions special">
+						<li><a href="https://drive.google.com/file/d/1947rbs6BNZGVaRybz13YOA35bDOLfWrH/view?usp=sharing" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Website Or Mobile App. Which to Focus??<br />
+								</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="ghibli_images/website.jpeg" alt="" /></a>
+					<p>Website Vs Mobile App.<br/>
+					We got some contract work with an e-commerce company based in New York City that sells clothing online but they also have in-store style and clothing advice sessions. Customers come in to the store, have sessions/meetings with a personal stylist, then they can go home and order either on a mobile app or website for the clothes they want. The company is trying to decide whether to focus their efforts on their mobile app experience or their website</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/Should-a-company-focus-more-on-its-website-or-mobile-app/tree/main" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Motion Tracking YOLOv4 DeepSort<br />
+								</a></h2>
+					</header>
+					<a href=""
+						class="image fit"><img src="ghibli_images/motion track.jpeg" alt="" /></a>
+					<p>In this project we perform Object tracking, which is implemented with YOLOv4, DeepSort, and TensorFlow. YOLOv4 is a state of the art algorithm that uses deep convolutional neural networks to perform object detections. </p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/Project-Motion-Tracking-YOLOv4_DeepSort/tree/main"
+								class="button">View Project</a></li>
+					</ul>
+				</article>
+				
+				<article>
+					<header>
+						<h2><a href="#">U.S Election Data Analysis 2012<br />
+								</a></h2>
+					</header>
+					<a href=""
+						class="image fit"><img src="ghibli_images/us elections.jpeg" alt="" /></a>
+					<p>US Election Data Analysis Project for the year 2012 (Obama v/s Romney). We have analyzed the aggregated poll data and answered some key questions. We also worked with a Donors Dataset whch will help us gain more insights about the election</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/Perception-For-Self-Driving-Cars"
+								class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Which advertisement <br />
+							gets the most click</a></h2>
+					</header>
+					<a href="" class="image fit"><img src="ghibli_images/advertisement.jpeg" alt="" /></a>
+					<p>Our marketing team prepared 10 ads, which are on the brand new SUV. All the ads have different designs. The advertising team needs to know which ad will result in most no. of clicksby the user.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/Moumon/Which-advertisement-gets-the-most-clicks/blob/main/Which_advertisement_gets_the_most_clicks.ipynb" class="button">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Perception For Self Driving Cars<br />
+								</a></h2>
+					</header>
+					<a href=""
+						class="image fit"><img src="ghibli_images/perception.jpeg" alt="" /></a>
+					<p>I have worked and explained the Perception Model used for self driving car analysis. Do check it out and HAVE FUN!!!!</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/SandeepanBhattacharyya/Perception-For-Self-Driving-Cars"
+								class="button">View Project</a></li>
+					</ul>
+				</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Brookfield Bengaluru<br />
+								Karnataka, India</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">7086309898</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">sandeepanpersonal@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/sandeepanbhattacharyya/"
+										class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+								<li><a href="https://github.com/Moumon" class="icon brands fa-github"><span
+											class="label">GitHub</span></a></li>
+								<li><a href="https://twitter.com/XcelSandeep018" class="icon brands fa-twitter"><span
+										class="label">Twitter(X)</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
